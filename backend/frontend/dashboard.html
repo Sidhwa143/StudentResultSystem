@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Student Result Management System</h1>
+                <p>Admin Dashboard</p>
+            </div>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+        </header>
+
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h3>Total Students</h3>
+
+                <p id="studentCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Total Courses</h3>
+
+                <p id="courseCount">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Total Results</h3>
+
+                <p id="resultCount">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu">
+
+            <button onclick="showStudents()">
+                View Students
+            </button>
+
+            <button onclick="showAddStudent()">
+                Add Student
+            </button>
+
+            <button onclick="showAddResult()">
+                Add Result
+            </button>
+
+            <button onclick="showResults()">
+                Manage Results
+            </button>
+
+        </div>
+
+
+        <div class="content">
+
+            <div id="content">
+
+                <h2>
+                    Welcome to Admin Dashboard
+                </h2>
+
+                <p>
+                    Select an option above to manage
+                    students and results.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

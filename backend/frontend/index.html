@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <h1>Student Result Management System</h1>
+
+
+    <!-- ========================================
+         SEARCH RESULT
+    ========================================= -->
+
+    <div class="search-box">
+
+        <h2>Check Student Result</h2>
+
+        <input
+            type="text"
+            id="regNo"
+            placeholder="Enter Registration Number"
+        >
+
+        <button onclick="searchResult()">
+            Search Result
+        </button>
+
+    </div>
+
+
+    <!-- ========================================
+         RESULT SECTION
+    ========================================= -->
+
+    <div
+        id="resultSection"
+        style="display:none;"
+    >
+
+
+        <!-- STUDENT DETAILS -->
+
+        <div class="student-info">
+
+            <h2>Student Details</h2>
+
+
+            <p>
+                <strong>Registration No:</strong>
+                <span id="studentReg"></span>
+            </p>
+
+
+            <p>
+                <strong>Name:</strong>
+                <span id="studentName"></span>
+            </p>
+
+
+            <p>
+                <strong>Department:</strong>
+                <span id="studentDepartment"></span>
+            </p>
+
+
+            <p>
+                <strong>Semester:</strong>
+                <span id="studentSemester"></span>
+            </p>
+
+        </div>
+
+
+        <!-- SEMESTER RESULT -->
+
+        <h2>Semester Result</h2>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Course Code</th>
+
+                    <th>Course Name</th>
+
+                    <th>Credits</th>
+
+                    <th>Marks</th>
+
+                    <th>Grade</th>
+
+                    <th>Grade Point</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="resultTable">
+
+            </tbody>
+
+        </table>
+
+
+        <!-- ========================================
+             SGPA
+        ========================================= -->
+
+        <div class="sgpa">
+
+            SGPA:
+            <span id="sgpa"></span>
+
+        </div>
+
+
+        <!-- ========================================
+             CGPA
+        ========================================= -->
+
+        <div class="cgpa">
+
+            CGPA:
+            <span id="cgpa"></span>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ERROR / MESSAGE -->
+
+    <p id="message"></p>
+
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

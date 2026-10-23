@@ -1,0 +1,448 @@
+/* ========================================
+   GENERAL
+======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #444;
+}
+
+
+/* ========================================
+   SEARCH BOX
+======================================== */
+
+.search-box {
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* ========================================
+   SELECT
+======================================== */
+
+select {
+    padding: 10px;
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+
+/* ========================================
+   STUDENT INFORMATION
+======================================== */
+
+.student-info {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.student-info p {
+    margin: 8px 0;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+tr:hover {
+    background: #eef5ff;
+}
+
+
+/* ========================================
+   SGPA
+======================================== */
+
+.sgpa {
+    margin-top: 25px;
+    padding: 15px;
+    background: #e9f7ef;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #198754;
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+#message {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   DASHBOARD
+======================================== */
+
+.dashboard {
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   TOP BAR
+======================================== */
+
+.topbar {
+    background: #1f2937;
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+}
+
+.topbar h1 {
+    margin: 0;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+}
+
+.topbar p {
+    margin: 5px 0 0;
+    color: #d1d5db;
+}
+
+
+/* Logout button */
+
+.topbar button {
+    background: #ef4444;
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-left: 0;
+}
+
+.topbar button:hover {
+    background: #dc2626;
+}
+
+
+/* ========================================
+   DASHBOARD STATISTICS
+======================================== */
+
+.stats {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 30px 0;
+}
+
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    flex: 1;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+
+    color: #6b7280;
+}
+
+.card p {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin-bottom: 0;
+
+    color: #2563eb;
+}
+
+
+/* ========================================
+   DASHBOARD MENU
+======================================== */
+
+.menu {
+    padding: 0 0 25px;
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.menu button {
+    padding: 12px 20px;
+
+    border: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-left: 0;
+}
+
+.menu button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================================
+   DASHBOARD CONTENT
+======================================== */
+
+.content {
+    margin: 0 0 40px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0,0,0,0.08);
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+
+/* ========================================
+   STUDENT SEARCH
+======================================== */
+
+#studentSearch {
+    width: 300px;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+#studentSearch:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+/* ========================================
+   DASHBOARD TABLE
+======================================== */
+
+#studentsTable {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+#studentsTable th {
+    background: #1f2937;
+
+    color: white;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+#studentsTable td {
+    padding: 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: center;
+}
+
+#studentsTable tr:hover {
+    background: #f9fafb;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .topbar {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    .topbar h1 {
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu button {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        padding: 15px;
+
+        overflow-x: auto;
+    }
+
+    #studentSearch {
+        width: 100%;
+    }
+
+    table {
+        min-width: 700px;
+    }
+
+}
